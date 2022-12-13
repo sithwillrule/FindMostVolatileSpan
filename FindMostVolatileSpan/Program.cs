@@ -43,8 +43,8 @@ internal static class Price
 {
     internal static FindMostVolatileSpanModelResult FindMostVolatile(IList<double> chart, int lookUpSpanLenght)
     {
-        double highPrice = chart[0];
-        double lowPrice = chart[0];
+        double highPrice = chart.First();
+        double lowPrice = chart.First();
         int index = 0;
 
         for (int i = -1; i < chart.Count; i++)
